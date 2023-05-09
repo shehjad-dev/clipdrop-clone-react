@@ -1,0 +1,304 @@
+.imgUpSection-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.imgInput-box {
+    height: 150px;
+    border-radius: 2rem;
+    border: 4px dashed black;
+    overflow: hidden;
+    width: 100%;
+
+    @media (max-width: 575.98px) {
+        width: 85vw;
+        margin: 0 auto;
+    }
+}
+
+.imgInput-dropperBox {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.imgInput-dropperBox > p {
+    cursor: pointer;
+
+    color: black;
+    font-weight: 600;
+
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    opacity: 1;
+    margin-left: 4px;
+    margin-right: 4px;
+    user-select: none;
+    margin-bottom: 2rem;
+}
+
+.imgInput-dropperBox:hover {
+    background-color: #e5e7eb;
+}
+
+.imgInput-dropperBox > input {
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    /* display: none; */
+}
+
+@media (min-width: 640px) {
+    .imgInput-dropperBox {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+/* 2nd div */
+
+.imgOptionalText {
+    display: flex;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.imgOptionalText > p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* 3rd div */
+.optionalImg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.optionalImg-container img {
+    width: 140px;
+    height: 140px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.optionalImg-container img:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 575.98px) {
+    .optionalImg-container {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .optionalImg-container img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* 4th div */
+
+.imgPreview-container {
+    background-color: #ededed;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: fit-content;
+    padding: 3rem 0;
+    /* max-width: 900px;
+    margin: 0 auto; */
+}
+
+.imgPreview-box {
+    width: 500px;
+    margin: 0 auto;
+    @media (max-width: 575.98px) {
+        width: 100%;
+    }
+}
+
+.imgPreview-box .canvasContainer {
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+
+    @media (max-width: 575.98px) {
+        width: 80vw;
+        height: 80vw;
+        margin: 0 auto;
+    }
+}
+
+.checkerboard {
+    width: 100%;
+    height: 100%;
+    --checkerboard-black-color: #bfbfbf;
+    --checkerboard-white-color: transparent;
+    background-image: linear-gradient(
+            45deg,
+            var(--checkerboard-black-color) 25%,
+            var(--checkerboard-white-color) 25%
+        ),
+        linear-gradient(
+            -45deg,
+            var(--checkerboard-black-color) 25%,
+            var(--checkerboard-white-color) 25%
+        ),
+        linear-gradient(
+            45deg,
+            var(--checkerboard-white-color) 75%,
+            var(--checkerboard-black-color) 75%
+        ),
+        linear-gradient(
+            -45deg,
+            var(--checkerboard-white-color) 75%,
+            var(--checkerboard-black-color) 75%
+        );
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+}
+
+/* canvas {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    height: 500px;
+    display: block;
+} */
+
+/* position: relative;
+user-select: none;
+width: 446px;
+height: 446px; */
+
+.canvasP1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    @media (max-width: 575.98px) {
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
+.imgPreview-formBox {
+    width: 500px;
+    margin: 2rem auto;
+    position: relative;
+    height: 110px;
+
+    @media (max-width: 575.98px) {
+        width: 80vw;
+    }
+}
+
+.imgPreview-formBox textarea {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 1rem;
+    height: 110px;
+    resize: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem;
+
+    @media (max-width: 575.98px) {
+        width: 80vw;
+    }
+}
+
+.imgPreview-formBox textarea:focus {
+    outline: none;
+}
+
+.imgPreview-formBox button {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background-color: transparent;
+    border: 0px;
+    padding: 1.5px;
+    color: black;
+    cursor: pointer;
+}
+
+.imgPreview-formButton {
+    width: 500px;
+    margin: 0 auto;
+    text-align: right;
+
+    @media (max-width: 575.98px) {
+        width: 80vw;
+    }
+}
+
+.imgPreview-formButton > button {
+    background-color: #1d4ed8;
+    padding: 0.6rem 1rem;
+    color: white;
+    font-size: 13px;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.imgPreview-formButton > button:hover {
+    background-color: #3764df;
+    transition: all 0.15s ease-in;
+}
+
+.imgPreview-formButton > button > span {
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    background-color: white;
+    color: black;
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem;
+    font-weight: 600;
+}

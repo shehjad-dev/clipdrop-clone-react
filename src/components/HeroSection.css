@@ -1,0 +1,93 @@
+.heroSection-container {
+    padding: 3rem 0 4rem 0;
+}
+
+.heroSection-box {
+    background-color: #f4f4f5;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 200px;
+
+    @media (max-width: 575.98px) {
+        max-width: 80vw;
+        height: 180px;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .heroSection-box .textContent {
+        display: none;
+    }
+}
+
+.heroSection-box > div,
+.heroSection-box > video {
+    width: 50%;
+
+    @media (max-width: 575.98px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.heroSection-box .textContent {
+    /* padding: 0 0 0 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+
+    @media (max-width: 575.98px) {
+        display: none;
+    }
+}
+
+.heroSection-box .textContent .heading {
+    margin-left: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.heroSection-box .textContent .heading span {
+    margin-top: 0.3rem;
+}
+
+.heroSection-box .textContent .heading h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.heroSection-box .textContent > p {
+    margin-left: 2rem;
+    font-weight: 700;
+}
+
+.videoContainer {
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit;
+}
+
+video {
+    object-fit: contain;
+    /* scale: 1.5; */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit;
+}
+
+/* #F4F4F5 */
