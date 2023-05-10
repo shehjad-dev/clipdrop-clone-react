@@ -1,0 +1,127 @@
+.myNavContainer {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+.myNav {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+    @media (max-width: 575.98px) {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+}
+
+.myNav .logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.linksBox > ul {
+    list-style: none;
+    display: flex;
+    gap: 0.3rem;
+
+    @media (max-width: 575.98px) {
+        display: none;
+    }
+}
+
+.linksBox > ul > li > a {
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1d4ed8;
+
+    display: flex;
+    align-items: center;
+}
+
+.linksBox ul li a > span svg {
+    width: 1rem;
+    margin-left: 0.3rem;
+}
+
+.linksBox ul li a:hover {
+    background-color: #c8d9fe;
+    color: #4d5870;
+    transition: all 0.3s ease-in;
+}
+
+.linksBox {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linksBox button {
+    background-color: #c8d9fe;
+    color: black;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.linksBox button:hover {
+    background-color: #aac5fe;
+    transition: all 0.3s ease-in;
+}
+
+.popMenu {
+    position: absolute;
+    top: 4rem;
+    display: column;
+    background-color: #f3f3f3;
+    padding: 8px;
+    border-radius: 0.6rem;
+    box-shadow: 1px 3px 18px -2px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 1px 3px 18px -2px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 1px 3px 18px -2px rgba(0, 0, 0, 0.21);
+    width: 200px;
+    animation: fadeIn 0.1s ease-in;
+    font-size: 0.875rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.popMenu > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.popMenu > ul > li {
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: black;
+    cursor: pointer;
+}
+
+.popMenu li:hover {
+    background-color: white;
+}

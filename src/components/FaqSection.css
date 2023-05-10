@@ -1,0 +1,89 @@
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.faqSection-container {
+    margin: 4rem 0;
+}
+
+.faqSection-box {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 575.98px) {
+        padding: 0 1rem;
+    }
+}
+
+.faqSection-box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 575.98px) {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 0.7rem;
+    }
+}
+
+details {
+    position: relative;
+
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-style: solid;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* details:open summary {
+    padding-bottom: 0;
+
+} */
+
+summary > h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    @media (max-width: 575.98px) {
+        padding: 0 1rem;
+    }
+}
+
+details > div {
+    margin-left: 1.4rem;
+    margin-top: 0.9rem;
+    color: #000; /* Replace with desired text color */
+    opacity: 0.5;
+    padding-bottom: 1rem;
+}
+
+/*   .custom-div.group-open {
+    margin-bottom: 0.75rem; 
+  } */

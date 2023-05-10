@@ -80,7 +80,7 @@ img {
     border-radius: inherit;
 }
 
-video {
+.videoContainer video {
     object-fit: contain;
     /* scale: 1.5; */
     border-radius: 10px;

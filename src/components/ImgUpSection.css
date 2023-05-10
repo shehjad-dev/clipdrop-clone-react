@@ -48,7 +48,8 @@
     margin-left: 4px;
     margin-right: 4px;
     user-select: none;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    /* margin-bottom: 2rem; */
 }
 
 .imgInput-dropperBox:hover {
