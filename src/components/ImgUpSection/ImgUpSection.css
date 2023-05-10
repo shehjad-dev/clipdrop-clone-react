@@ -116,14 +116,15 @@
 
 @media (max-width: 575.98px) {
     .optionalImg-container {
-        position: relative;
+        /* position: relative;
         left: 50%;
         transform: translateX(-50%);
+        background-color: red; */
     }
 
     .optionalImg-container img {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
     }
 }
 

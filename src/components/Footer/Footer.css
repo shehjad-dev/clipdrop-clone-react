@@ -29,7 +29,7 @@
 }
 
 .footerBox ul {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 
     list-style: none;
     width: 40vw;
@@ -55,8 +55,9 @@
 }
 
 .footerBottom {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 
     padding: 1.5rem;
     text-align: center;
+    font-weight: 500;
 }
