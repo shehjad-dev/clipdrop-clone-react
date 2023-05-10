@@ -10,7 +10,7 @@ const FaqSection = () => {
             <div className="faqSection-box">
                 <h3>FREQUENTLY ASKED QUESTIONS</h3>
                 {arr.map((item) => (
-                    <FaqRow />
+                    <FaqRow key={item} />
                 ))}
             </div>
         </div>

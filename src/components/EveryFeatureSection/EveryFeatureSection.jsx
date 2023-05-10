@@ -1,9 +1,9 @@
 import React from "react";
 import "./EveryFeatureSection.css";
 import FeatureGridItem from "./FeatureGridItem";
+import { gridItemData } from "../../data/gridItemData";
 
 const EveryFeatureSection = () => {
-    const arr = [1, 2, 3, 4, 5];
     return (
         <div className="everyFeature-container">
             <div className="everyFeature-box">
@@ -11,8 +11,9 @@ const EveryFeatureSection = () => {
                     EVERYTHING YOU NEED TO CREATE STUNNING VISUALS
                 </h3>
                 <div className="container">
-                    {arr.map((item) => (
-                        <FeatureGridItem key={item} />
+                    {}
+                    {gridItemData.map((item) => (
+                        <FeatureGridItem key={item.id} item={item} />
                     ))}
                     {/* {arr.map((item) => (
                         <div className="column">Column {item}</div>

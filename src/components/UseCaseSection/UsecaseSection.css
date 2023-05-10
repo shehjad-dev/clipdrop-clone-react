@@ -120,6 +120,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+    overflow-x: hidden;
 
     @media (max-width: 575.98px) {
         width: fit-content;

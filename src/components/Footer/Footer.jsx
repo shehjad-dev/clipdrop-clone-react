@@ -6,27 +6,27 @@ const Footer = () => {
         <div className="footerContainer">
             <div className="footerBox">
                 <div>
-                    <h3>Category 1</h3>
+                    <h3>Clipdrop</h3>
                     <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
+                        <li>Home</li>
+                        <li>Affiliate Program</li>
+                        <li>Stability.ai</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Category 1</h3>
+                    <h3>Support</h3>
                     <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
+                        <li>Contact us</li>
+                        <li>Help</li>
+                        <li>FAQ</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Category 1</h3>
+                    <h3>Legal</h3>
                     <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
+                        <li>Privacy</li>
+                        <li>Terms of use</li>
+                        <li>Legal Notice</li>
                     </ul>
                 </div>
             </div>
